@@ -1,0 +1,46 @@
+/* favourite meal container is started form here  */
+.favMealCont {
+    margin: 80px auto;
+	width: 100%;
+    max-width: 500px;
+	box-sizing: border-box; 
+    padding: 10px;
+    
+}
+/* favourite meal items  */
+.favMealItems{
+    background-color: rgba(240, 248, 255, 0.389);
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.favMealImgCont{
+    width: 40px;
+}
+/* fav_meal img   */
+.favMealImg{
+    width: 40px;
+    margin: 5px 15px;
+}
+.favMealName{
+    /* width: 40px; */
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin: 5px 20px ;
+    /* line-height: 40px; */
+}
+.removeMeal {
+    /* width: 40px; */
+    margin-left: auto;
+    margin-right: 20px;
+    /* text-align: center; */
+    /* vertical-align: center; */
+}
+/* remove meal icon  */
+.removeMeal img{
+    width: 40px;
+    margin-left: auto;
+}

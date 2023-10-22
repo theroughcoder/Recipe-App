@@ -1,0 +1,31 @@
+/* ////////////////////////////////////////////////////////////////////// */
+/*  header started form here  */
+header{
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.397);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* logo of the website */
+.logo{
+    font-size: 2.5rem;
+    margin-left: 5%;
+    color: white;
+    font-family:monospace;
+}
+/* css for header links  */
+.headerLinks{
+    font-size: 5px;
+    margin-right: 5%;
+    color: aliceblue;
+    transform: translateY(10px);
+}
+.headerLinks a{
+    font-size: 1rem;
+    padding: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* header is completed here  */

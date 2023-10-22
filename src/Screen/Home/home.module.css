@@ -1,0 +1,106 @@
+.searchBarSection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 10ch;
+    /* align-items: end; */
+  
+  
+}
+
+
+.searchBar{
+    background-color: rgb(56, 53, 53);
+    /* border: 2px solid green; */
+    width: 90%;
+    max-width: 600px;
+    border-radius: 50px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    box-shadow: 1px 1px 5px black;
+    z-index: 10;
+}
+/* search bar input  */
+.searchBar input{
+    height: 100%;
+     border: 0px solid green;
+    width: 100%;
+    border-radius: 50px; 
+    background-color: rgb(243, 248, 248);
+    padding-left: 5%;
+    color: rgb(121, 124, 124);
+    outline:none;
+
+}
+/* image of magnifying glass in search bar input  */
+.searchBar img{
+    width: 40px;
+    transform: translateX(10%);
+}
+/* search button  */
+.searchBtn{
+    position: absolute;
+    right: 20px;
+    border-radius: 50px;
+    /* height: 100%; */
+    /* background-color: rgb(129, 228, 16); */
+}
+/* container for search results  */
+.searchResult{
+    display: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(241, 237, 237);
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+    border-radius: 0 0 50px 50px ;
+    overflow: auto;
+    /* Hide scrollbar for IE, Edge and Firefox */
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    
+}
+/* hide scroll bar in chrome browser */
+.searchResult::-webkit-scrollbar {
+    display: none;
+}
+/* item of search bar result  */
+.resultItems{
+    margin:  0 30px ;
+    display: flex;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.163);
+    padding: 5px;
+}
+.resultItems img{
+    padding-left: 1px;
+    width: 40px;
+}
+.resultItems p{
+    padding-left: 25px;
+    color: rgb(74, 78, 78);
+}
+a {
+    text-decoration: none;
+}
+.resultItems div {
+    padding-left: 25px;
+    color: rgb(74, 78, 78);
+    margin-left: auto;
+    padding-right: 20px;
+
+}
+.favMeal{
+    /* width: 100px; */
+    transform: scale(1.2);
+}
+.favMeal:hover{
+    /* width: 100px; */
+    transform: scale(1.3);
+}
+.tool{
+    transition : all .5s  ;
+}
