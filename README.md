@@ -1,4 +1,4 @@
-# [Recipe](https://recipe-app-sigma-sage.vercel.app/)
+# [Recipe - Click Here](https://recipe-app-sigma-sage.vercel.app/)
 
 ## Overview
 Meal app that helps you search for food online. You can add your favorite meal to your favorite meal list. This web app has three pages which are the home page, meal details page, and favorite meal page. If you want, you can remove any meal from your favorite meal list that you added earlier.
