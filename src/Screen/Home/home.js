@@ -14,7 +14,7 @@ const Home = () => {
     const [recipeArr, setRecipeArr] = useState([]);
     const searchBarRef  = useRef(null); 
 
-    // useClickOutSide(searchBarRef,  ()=> setFocus(false))
+    useClickOutSide(searchBarRef,  ()=> setFocus(false))
 
     useEffect(()=>{
 

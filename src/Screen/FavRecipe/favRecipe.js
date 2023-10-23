@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Style from "./favRecipe.module.css"
+import { useNavigate } from "react-router-dom";
 
 let parseFavMealArr = [];
 
@@ -7,10 +8,12 @@ let parseFavMealArr = [];
 
 
 const FavRecipe = () => {
+    const Navigate = useNavigate();
     const [favRecipes, setFavRecipe] = useState([]);
 
 
-    function handleDelete(id) {
+    function handleDelete(e, id) {
+        e.stopPropagation();
         // console.log(id)
          parseFavMealArr = parseFavMealArr.filter((e) => {
             return e.id != id;
@@ -40,10 +43,10 @@ const FavRecipe = () => {
                 {
                     favRecipes.map((i) => {
                         return (<>
-                            <div className={Style.favMealItems}>
+                            < div  onClick={()=> Navigate(`/recipe-details/${i.id}`)} className={Style.favMealItems}>
 
                                 <div className={Style.favMealImg}><img className={Style.favMealImg} src={i.img} />
-                                </div> <div className={Style.favMealName}> {i.name} </div><div className={Style.removeMeal}> <img onClick={(e) => { handleDelete(i.id) }} className={Style.remMeal} src="./img/download.png" alt="" /> </div>`
+                                </div> <div className={Style.favMealName}> {i.name} </div><div className={Style.removeMeal}> <img onClick={(e) => { handleDelete(e, i.id) }} className={Style.remMeal} src="./img/download.png" alt="" /> </div>`
                             </div>
                         </>
                         )
